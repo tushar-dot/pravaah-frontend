@@ -5,7 +5,7 @@ import CreateRequest from "./components/CreateRequest";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Login />} />
+      <Route path="/login" element={<Login />} />
       <Route path="/createRequest" element={<CreateRequest />} />
     </Routes>
   );
