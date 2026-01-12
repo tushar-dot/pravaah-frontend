@@ -8,9 +8,9 @@ function Login() {
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
-     e.preventDefault();
-  console.log("Submit clicked"); // 👈 ADD THIS
-    
+    e.preventDefault();
+    console.log("Submit clicked"); // 👈 ADD THIS
+
     try {
       console.log("Calling login API"); // 👈 ADD
       const res = await axios.post("http://localhost:8080/login", {
@@ -21,7 +21,7 @@ function Login() {
       localStorage.setItem("token", res.data);
 
       // ✅ NAVIGATE HERE
-      navigate("/create-request");
+      navigate("/createRequest");
 
     } catch (err) {
       alert("Login failed");
