@@ -14,7 +14,7 @@ function Login() {
 
     try {
       console.log("Calling login API"); // 👈 ADD
-      const res = await axios.post("http://localhost:8080/auth/login", {
+      const res = await axios.post("http://localhost:9090/auth/login", {
         emailId,
         password,
       });
